@@ -8,12 +8,11 @@ def palindrom_check(val):
             char_count[i] = 1
     count = 0
     for val in char_count.values():
-        if val%2!=0:
+        if val%2!=0 and count != 2:
             count += 1
-    if count > 1:
-        return False
-    else:
-        return True
+        elif count == 2:
+            return False
+    return True
 
 
 val = input("Enter the string : ")
