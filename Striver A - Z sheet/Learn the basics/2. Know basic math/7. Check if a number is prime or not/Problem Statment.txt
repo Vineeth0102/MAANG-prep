@@ -1,0 +1,12 @@
+// vineeth please write the Q
+Given an integer N, return true it's a Prime number otherwise return false.
+A prime number is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers. A prime number has exactly two distinct positive divisors: 1 and itself.
+
+Examples
+Input: N = 3
+Output: True
+Explanation: 3 is a prime number.
+
+Input: N = 12
+Output: False
+Explanation: 12 is not a prime number.
