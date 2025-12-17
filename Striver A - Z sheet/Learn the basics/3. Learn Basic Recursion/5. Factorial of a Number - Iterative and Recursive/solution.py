@@ -1,3 +1,4 @@
+# TC : O(N) , SC : O(1)
 def factIterator(num: int) -> int:
     if num < 1:
         return "Enter valid Input"
@@ -6,6 +7,7 @@ def factIterator(num: int) -> int:
         res *= i
     return res
 
+# TC : O(N) , SC : O(n) due to recursive stack
 def factRecur(num: int) -> int:
     if num < 1:
         return "Entre Valid Input"

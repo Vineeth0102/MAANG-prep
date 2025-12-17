@@ -1,3 +1,5 @@
+# TC : O(N) , SC : O(N) due to recursive stack
+
 def oneToN(base: int, num: int) -> None:
     if num == 1:
         print(num, end=" ")
@@ -5,7 +7,7 @@ def oneToN(base: int, num: int) -> None:
         oneToN(base, num-1)
         print(num, end=" ")
 
-#FOrward Recursion
+#Forward Recursion
 def oneToN(current, n):
         if current > n:
             return

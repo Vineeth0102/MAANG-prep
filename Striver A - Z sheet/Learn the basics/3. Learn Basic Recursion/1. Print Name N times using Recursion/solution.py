@@ -1,3 +1,5 @@
+
+# TC : O(N) , SC : O(N) due to recursive stack
 def recurName(name: str, val: int) -> None:
     if val < 1:
         print("Invalid Input")
