@@ -1,3 +1,5 @@
+# TC: O(N ^ 2) in worst case, as well as in the best case
+# SC: O(1) as we are not using any extra space
 def bubbleSort(arr: list[int]) -> list[int]:
     n = len(arr)
     for i in range(n-1, -1, -1):
@@ -6,6 +8,8 @@ def bubbleSort(arr: list[int]) -> list[int]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
+# TC: O(N ^ 2) in worst case, O(N) in best case when array is already sorted
+# SC: O(1) as we are not using any extra space
 def bubbleSort(arr: list[int]) -> list[int]:
     n = len(arr)
     for i in range(n-1, -1, -1):
