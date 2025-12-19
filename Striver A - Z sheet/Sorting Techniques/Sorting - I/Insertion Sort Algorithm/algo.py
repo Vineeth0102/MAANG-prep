@@ -1,3 +1,5 @@
+# TC: O(N ^ 2) in worst case, as well as in the best case
+# SC: O(1) as we are not using any extra space
 def inserstionSort(arr: list[int]) -> list[int]:
     n = len(arr)
     for i in range(1, n):
