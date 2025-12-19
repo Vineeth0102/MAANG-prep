@@ -1,0 +1,26 @@
+def bubbleRecurSort(arr: list[int], n: int) -> None:
+    if n == 1:
+        return
+    for j in range(n-1):
+        if arr[j] > arr[j+1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+
+    bubbleRecurSort(arr, n - 1)
+
+def bubbleRecurSortOpt(arr: list[int], n: int) -> None:
+    if n == 1:
+        return
+    is_swap = False
+    for j in range(n-1):
+        if arr[j] > arr[j+1]:
+            is_swap = True
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+    if not is_swap:
+        return
+
+    bubbleRecurSort(arr, n - 1) 
+
+num = int(input("Enter the number of elemnets : "))
+arr = list(map(int,input("Enter the array elements : ").split()))
+bubbleRecurSortOpt(arr, num)
+print(arr)
