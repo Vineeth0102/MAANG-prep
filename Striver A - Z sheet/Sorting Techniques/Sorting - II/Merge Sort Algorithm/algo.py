@@ -1,3 +1,5 @@
+# TC: O(N log N) because we are dividing the array into two halves log N times
+# SC: O(N)
 def mergeSort(arr: list[int]) -> None:
     def divide(arr: list[int], lower_bound: int, upper_bound: int):
         if lower_bound >= upper_bound:

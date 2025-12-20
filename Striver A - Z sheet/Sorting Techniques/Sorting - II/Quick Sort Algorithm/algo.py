@@ -1,3 +1,5 @@
+# TC: O(N log N) on average, O(N^2) in the worst case => when array is already sorted
+# SC: O(log N) due to recursive stack space or O(N) in the worst case
 def quickSort(arr: list[int], num: int) -> None:
     def partion(arr: list[int], low: int, high: int):
         pivot = arr[high]
@@ -11,9 +13,9 @@ def quickSort(arr: list[int], num: int) -> None:
 
     def quick(arr: list[int], low: int, high: int):
         if low < high:
-            pivotIndex = self.partition(arr, low, high)
-            quickSort(arr, low, pivotIndex - 1)
-            quickSort(arr, pivotIndex + 1, high)
+            pivotIndex = partion(arr, low, high)
+            quick(arr, low, pivotIndex - 1)
+            quick(arr, pivotIndex + 1, high)
 
 num = int(input("Enter the number of elemnets : "))
 arr = list(map(int,input("Enter the array elements : ").split()))

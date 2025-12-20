@@ -1,3 +1,5 @@
+# TC: O(N^2) in the all case
+# SC: O(N) due to recursive stack space
 def bubbleRecurSort(arr: list[int], n: int) -> None:
     if n == 1:
         return
@@ -7,6 +9,8 @@ def bubbleRecurSort(arr: list[int], n: int) -> None:
 
     bubbleRecurSort(arr, n - 1)
 
+# TC: O(N^2) in the worst case, O(N) in the best case
+# SC: O(N) due to recursive stack space
 def bubbleRecurSortOpt(arr: list[int], n: int) -> None:
     if n == 1:
         return
