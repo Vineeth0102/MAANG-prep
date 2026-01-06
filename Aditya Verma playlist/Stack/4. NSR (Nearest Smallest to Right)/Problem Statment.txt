@@ -1,0 +1,19 @@
+For each element, find the nearest element on its right that is strictly smaller. If none exists, return -1.
+
+Examples
+
+Input: arr[] = [1, 3, 2, 4]
+Output: [-1, 2, -1, -1]
+Explanation: Next smaller to right of 1 → none → -1, Next smaller to right of 3 → 2, Next smaller to right of 2 → none → -1, Next smaller to right of 4 → none → -1
+
+Input: arr[] = [6, 8, 0, 1, 3]
+Output: [0, 0, -1, -1, -1]
+Explanation: Next smaller to right of 6 → 0, Next smaller to right of 8 → 0, Next smaller to right of 0 → none → -1, Next smaller to right of 1 → none → -1, Next smaller to right of 3 → none → -1
+
+Input: arr[] = [1, 2, 3, 5]
+Output: [-1, -1, -1, -1]
+Explanation: No element has a smaller element on its right in a strictly increasing array → all -1
+
+Input: arr[] = [5, 4, 3, 1]
+Output: [4, 3, 1, -1]
+Explanation: Next smaller to right of 5 → 4, Next smaller to right of 4 → 3, Next smaller to right of 3 → 1, Next smaller to right of 1 → none → -1

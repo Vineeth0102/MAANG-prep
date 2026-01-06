@@ -1,0 +1,20 @@
+You are given an array arr[] of integers, the task is to find the previous greater element for each element of the array in order of their appearance in the array. Previous greater element of an element in the array is the nearest element on the left which is greater than the current element.
+If there does not exist previous greater of current element, then previous greater element for current element is -1.
+
+Examples
+
+Input: arr[] = [1, 3, 2, 4]
+Output: [-1, -1, 3, -1]
+Explanation: For 1 → no left elements → -1, For 3 → left is [1], none greater → -1, For 2 → left is [1, 3], nearest greater is 3, For 4 → left is [1, 3, 2], none greater than 4 → -1
+
+Input: arr[] = [6, 8, 0, 1, 3]
+Output: [-1, -1, 8, 8, 8]
+Explanation: For 6 → no left elements → -1, For 8 → left is [6], none greater → -1, For 0 → left is [6, 8], nearest greater is 8, For 1 → left is [6, 8, 0], nearest greater (scanning left) is 8, For 3 → left is [6, 8, 0, 1], nearest greater is 8
+
+Input: arr[] = [1, 2, 3, 5]
+Output: [-1, -1, -1, -1]
+Explanation: No element has a greater element to its left.
+
+Input: arr[] = [5, 4, 3, 1]
+Output: [-1, 5, 4, 3]
+Explanation: For 5 → -1, For 4 → nearest greater on left is 5, For 3 → nearest greater on left is 4, For 1 → nearest greater on left is 3

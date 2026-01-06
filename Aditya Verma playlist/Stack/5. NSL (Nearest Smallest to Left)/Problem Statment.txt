@@ -1,0 +1,19 @@
+For each element, find the nearest element on its left that is strictly smaller. If none exists, return -1.
+
+Examples
+
+Input: arr[] = [1, 3, 2, 4]
+Output: [-1, 1, 1, 2]
+Explanation: For 1 → no left elements → -1, For 3 → left: [1], nearest smaller → 1, For 2 → left: [1, 3], nearest smaller → 1, For 4 → left: [1, 3, 2], nearest smaller → 2
+
+Input: arr[] = [6, 8, 0, 1, 3]
+Output:  [-1, 6, -1, 0, 1]
+Explanation: For 6 → no left elements → -1, For 8 → left: [6], nearest smaller → 6, For 0 → left: [6, 8], none smaller → -1, For 1 → left: [6, 8, 0], nearest smaller → 0, For 3 → left: [6, 8, 0, 1], nearest smaller → 1
+
+Input: arr[] = [1, 2, 3, 5]
+Output: [-1, 1, 2, 3]
+Explanation: For 1 → -1, For 2 → nearest smaller on left → 1, For 3 → nearest smaller on left → 2, For 5 → nearest smaller on left → 3
+
+Input: arr[] = [5, 4, 3, 1]
+Output: [-1, -1, -1, -1]
+Explanation: Strictly decreasing: no element has a smaller element to its left → all -1
