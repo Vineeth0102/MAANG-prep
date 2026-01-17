@@ -1,3 +1,5 @@
+# TC -> O(N)
+# SC -> O(N) because the use of dummy array
 def leftRotate(arr: list[int]) -> None:
     dummy_arr = [0] * len(arr)
     for i in range(n):
@@ -5,6 +7,8 @@ def leftRotate(arr: list[int]) -> None:
     arr = dummy_arr 
     print(dummy_arr)
 
+# TC -> O(N)
+# SC -> O(1) because the use of one extra variable to store the value 
 def leftRotate1(arr: list[int]) -> None:
     first_element = arr[0]
     n = len(arr)
