@@ -1,0 +1,14 @@
+Problem Statement:
+    Given a sorted array in descending order arr[] and an integer k, find the index (0-based) of k using binary search.
+    If k is not present, return -1.
+
+Examples:
+    Example 1: 
+        Input: arr[] = [20, 17, 15, 14, 13, 10, 8], k = 14
+        Output: 3
+        Explanation: 14 is present at index 3.
+
+    Example 2:
+        Input: arr[] = [100, 90, 80, 70, 60], k = 75
+        Output: -1
+        Explanation: 75 is not present in the array.
