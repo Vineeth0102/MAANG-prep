@@ -1,0 +1,16 @@
+Problem Statement:
+    Given a sorted array that has been rotated (clockwise), find how many times it has been rotated.    If k is not present, return 0.
+
+Examples:
+    Example 1: 
+        Input: arr[] = [15, 18, 2, 3, 6, 12]
+        Output: 2
+        Explanation: Minimum element 2 is at index 2, so array is rotated 2 times.
+
+    Example 2:
+        Input: arr[] = [7, 9, 11, 12, 5]
+        Output: 4
+
+    Example 3:
+        Input: arr[] = [1, 2, 3, 4, 5]
+        Output: 0

@@ -1,0 +1,13 @@
+Problem Statement:
+    Given a sorted array arr[] (ascending order) and a target element k, find how many times k appears in the array.
+    If k is not present, return 0.
+
+Examples:
+    Example 1: 
+        Input: aarr[] = [1, 2, 2, 2, 3, 4], k = 2
+        Output: 3
+        Explanation: First occurrence at index 1, last at index 3
+
+    Example 2:
+        Input: arr[] = [5, 7, 7, 8, 8, 10], k = 6
+        Output: 0
