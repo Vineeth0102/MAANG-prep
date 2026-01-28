@@ -1,3 +1,5 @@
+# TC: log(N)
+# Sc : O(1) 
 def binarySearchFirst(arr: list[int], target: int) -> list[int]:
     res = len(arr)
     first, last = 0, len(arr) - 1
@@ -14,7 +16,9 @@ def binarySearchFirst(arr: list[int], target: int) -> list[int]:
         return -1
     else:
         return res
-    
+        
+# TC: log(N)
+# Sc : O(1) 
 def binarySearchLast(arr: list[int], target: int) -> list[int]:
     res = -1
     first, last = 0, len(arr) - 1
