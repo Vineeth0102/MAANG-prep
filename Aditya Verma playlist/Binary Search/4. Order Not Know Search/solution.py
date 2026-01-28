@@ -1,3 +1,6 @@
+# Binary Search with Order not known
+# TC: log(N)
+# Sc : O(1) => for additional variables
 def binarySearch(arr: list[int], target: int) -> int:
     first, last = 0, len(arr) - 1
     isAsc = arr[first] < arr[last]
