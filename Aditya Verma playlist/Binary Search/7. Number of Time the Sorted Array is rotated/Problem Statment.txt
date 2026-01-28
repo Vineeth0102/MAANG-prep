@@ -1,6 +1,5 @@
 Problem Statement:
-    Given a sorted array that has been rotated (clockwise), find how many times it has been rotated.    If k is not present, return 0.
-
+    Given a sorted array that has been rotated (clockwise), find how many times it has been rotated.
 Examples:
     Example 1: 
         Input: arr[] = [15, 18, 2, 3, 6, 12]
