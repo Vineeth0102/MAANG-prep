@@ -1,3 +1,7 @@
+# Classic binary Search with reducing order
+# TC: Nlog(N)
+# Sc : O(1) 
+
 def binarySearchRev(arr: list[int], target: int) -> int:
     first, last = 0, len(arr) - 1
     while first <= last:
