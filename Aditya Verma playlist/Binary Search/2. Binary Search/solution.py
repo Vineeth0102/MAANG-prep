@@ -1,5 +1,5 @@
 # Classic binary Search
-# TC: Nlog(N)
+# TC: log(N)
 # Sc : O(1) 
 def binarySearch(arr: list[int], target: int) -> int:
     first, last = 0, len(arr) - 1
