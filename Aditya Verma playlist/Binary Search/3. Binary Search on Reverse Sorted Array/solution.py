@@ -1,5 +1,5 @@
 # Classic binary Search with reducing order
-# TC: Nlog(N)
+# TC: log(N)
 # Sc : O(1) 
 
 def binarySearchRev(arr: list[int], target: int) -> int:
