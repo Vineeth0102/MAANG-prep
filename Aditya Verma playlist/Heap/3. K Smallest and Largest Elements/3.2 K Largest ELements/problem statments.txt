@@ -1,0 +1,14 @@
+Problem Statement:
+    Given an unsorted integer array arr[] and an integer k, find and return the k largest elements in the array.  
+    The k largest element is determined by the sorted order of the array (duplicates count separately)
+
+Examples:
+    Example 1: 
+        Input: arr[] = [7, 10, 4, 3, 20, 15], k = 3
+        Output: [10, 20, 15]
+        Explanation: Sorted -> [3,4,7,10,15,20] → 3 largest are [10, 20, 15]
+    
+    Example 2:
+        Input: arr[] = [1, 2, 3, 4, 5], k = 1
+        Output: 5
+        Explanation: last element is the largest

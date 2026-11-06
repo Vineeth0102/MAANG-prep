@@ -1,0 +1,14 @@
+Problem Statement:
+    Given an unsorted integer array arr[] and an integer k, find and return the k smallest elements in the array.  
+    The k smallest elements are determined by the sorted order of the array (duplicates count separately)
+
+Examples:
+    Example 1: 
+        Input: arr[] = [7, 10, 4, 3, 20, 15], k = 3
+        Output: [7, 3, 4] //order does not matter
+        Explanation: Sorted -> [3,4,7,10,15,20] → 3 smallest is [7, 3, 4]
+    
+    Example 2:
+        Input: arr[] = [1, 2, 3, 4, 5], k = 1
+        Output: 1
+        Explanation: 1st smallest is the minimum.
