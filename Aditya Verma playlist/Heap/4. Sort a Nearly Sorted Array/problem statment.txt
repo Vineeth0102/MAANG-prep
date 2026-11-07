@@ -1,0 +1,29 @@
+Problem Statement:
+    Given an array arr[] of n distinct integers where each element is at most k positions away from its correctly sorted position, sort the array in ascending order.
+    You must achieve O(n log k) time complexity and O(k) space complexity.
+
+Constraints:
+
+    1 ≤ n ≤ 10^5
+    1 ≤ k < n
+    All elements are distinct
+    Each element is at most k positions away from its sorted position
+
+Input
+    7 3
+    6 5 3 2 8 10 9
+
+First line: n (size of array) and k (max displacement)
+Second line: n space-separated integers
+
+Output
+    2 3 5 6 8 9 10
+
+    The sorted array as space-separated integers.
+
+Examples
+    #	Input	            Output
+    1	7 36 5 3 2 8 10 9	2 3 5 6 8 9 10
+    2	5 21 4 5 3 2	    1 2 3 4 5
+    3	6 13 2 1 6 5 4	    1 2 3 4 5 6
+    4	4 24 3 2 1	        1 2 3 4
