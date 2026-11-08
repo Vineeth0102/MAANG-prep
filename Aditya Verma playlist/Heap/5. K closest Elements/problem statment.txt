@@ -1,0 +1,28 @@
+Problem Statement:
+    Given an array arr[] of n distinct integers and two integers k and x, find the k elements in the array that are closest to x. If two elements are equidistant from x, the smaller element is preferred.
+
+Constraints:
+    1 ≤ n ≤ 10^5
+    1 ≤ k ≤ n
+    -10^5 ≤ arr[i] ≤ 10^5
+    -10^5 ≤ x ≤ 10^5
+    All elements in arr are distinct
+
+Input:
+    7 3 7
+    6 5 3 2 8 10 9
+
+    First line: n (size), k (number of closest elements), x (target)
+    Second line: n space-separated integers
+
+Output:
+    6 8 9
+
+    The k closest elements to x, sorted in ascending order.
+
+Examples
+#	Input	                Output	        Explanation
+1	7 3 7 6 5 3 2 8 10 9	6 8 9	        Distances from 7: 6→1, 8→1, 9→2, 5→2, 10→3, 3→4, 2→5 → top 3: 6, 8, 9
+2	5 2 4 1 4 5 3 2	        3 4	            Distances from 4: 4→0, 3→1, 5→1, 2→2, 1→3 → top 2: 3, 4
+3	4 3 0 -1 2 3 4	        -1 2 3	        Distances from 0: -1→1, 2→2, 3→3, 4→4 → top 3: -1, 2, 3
+4	5 1 10 1 2 3 4 5	    5	            Closest to 10 is 5 (distance 5)
