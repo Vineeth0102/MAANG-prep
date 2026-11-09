@@ -1,0 +1,58 @@
+Problem Statement:
+    Given an integer array arr of size n and two integers k1 and k2 (where k1 < k2), find the sum of all elements that lie strictly between the k1-th largest and the k2-th largest element in the array.
+    The k1-th and k2-th largest elements themselves are excluded from the sum.
+
+Input Format:
+    First line: n space-separated integers (the array)
+    Second line: integer k1
+    Third line: integer k2
+
+Output Format:
+    A single integer: the sum of elements between the k1-th and k2-th largest
+
+Constraints:
+    1 ≤ n ≤ 10^5
+    1 ≤ k1 < k2 ≤ n
+    1 ≤ arr[i] ≤ 10^6
+
+Example 1:
+    Input:
+        12 14 10 2 5 18 9 11 3 20 8 6
+        2
+        5
+
+    Output: 14
+
+    Explanation:
+
+        Sorted descending: 20, 18, 14, 12, 11, 10, 9, 8, 6, 5, 3, 2
+
+        Rank	    Element
+        1st largest	20
+        2nd largest	18 ← k1 (excluded)
+        3rd largest	14
+        4th largest	12
+        5th largest	11 ← k2 (excluded)
+
+        Sum between = 14 + 12 = 26
+
+Example 2:
+
+    Input:
+        10 20 30 40 50
+        1
+        4
+
+    Output: 70
+
+    Explanation:
+
+        Sorted descending: 50, 40, 30, 20, 10
+
+        Rank	    Element
+        1st largest	50 ← k1 (excluded)
+        2nd largest	40
+        3rd largest	30
+        4th largest	20 ← k2 (excluded)
+
+        Sum between = 40 + 30 = 70
