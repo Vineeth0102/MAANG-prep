@@ -1,0 +1,49 @@
+Problem Statement:
+    Given an array of n points where each point is represented as [x, y] in a 2D plane, and an integer k, return the k points that are closest to the origin (0, 0). The distance is measured using Euclidean distance: √(x² + y²).
+    If two points have the same distance, any valid ordering is accepted.
+
+Input Format:
+    First line: integer n (number of points)
+    Next n lines: each line contains two space-separated integers x y
+    Last line: integer k
+
+Output Format:
+    A list of k points (each point as [x, y]), in order of increasing distance from origin
+
+Constraints:
+    1 ≤ n ≤ 10^5
+    1 ≤ k ≤ n
+    -10^4 ≤ x, y ≤ 10^4
+
+Example 1:
+
+        Input:
+            4
+            3 3
+            5 -1
+            -2 4
+            2 2
+            2
+
+        Output: [[2, 2], [3, 3]]
+
+        Explanation:
+            Point	Distance from Origin
+            [2, 2]	√8 ≈ 2.83
+            [3, 3]	√18 ≈ 4.24
+            [5, -1]	√26 ≈ 5.10
+            [-2, 4]	√20 ≈ 4.47
+
+            Top-2 closest: [2,2] and [3,3]
+
+Example 2:
+    Input:
+        5
+        0 0
+        1 1
+        2 2
+        3 3
+        4 4
+        3
+
+    Output: [[0, 0], [1, 1], [2, 2]]
