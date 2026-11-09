@@ -1,0 +1,41 @@
+Problem Statement:
+    You are given n ropes of different lengths. You need to connect all the ropes into a single rope. The cost of connecting two ropes is equal to the sum of their lengths. Find the minimum total cost required to connect all ropes into one.
+    Strategy hint: Always connect the two shortest ropes first (greedy approach using a min-heap).
+
+Input Format:
+    A single line of n space-separated integers representing rope lengths
+
+Output Format:
+    A single integer: the minimum total cost to connect all ropes
+
+Constraints:
+    1 ≤ n ≤ 10^5
+    1 ≤ arr[i] ≤ 10^6
+
+Example 1:
+
+    Input: 4 3 2 6
+    Output: 29
+
+    Explanation:
+
+        Step	Connect	Cost	Running Total
+        1	    2 + 3	5	    5
+        2	    4 + 5	9	    14
+        3	    6 + 9	15	    29
+
+    Total minimum cost = 29
+
+Example 2:
+
+    Input: 20 100 25 50 5
+    Output: 175
+
+    Explanation:
+
+        Step	Connect	Cost	Running Total
+        1	    5 + 20	25	    25
+        2	    25 + 25	50	    75
+        3	    50 + 50	100	    175
+
+        Total = 175
